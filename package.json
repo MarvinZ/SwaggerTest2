@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
     "httpsnippet": "^2.0.0",
+    "rapidoc": "^9.3.4",
     "redoc": "^2.0.0",
     "rxjs": "~7.8.0",
     "swagger-ui": "^4.18.3",

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
@@ -6,6 +6,7 @@ import { ApiDocumentationsComponent } from './api-documentations/api-documentati
 import { ReDocComponent } from './redoc/redoc.component';
 import { AglioComponent } from './aglio/aglio.component';
 import { HttpsnippetComponent } from './httpsnippet/httpsnippet.component';
+import { RapiDocComponent } from './rapi-doc/rapi-doc.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/swagger', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'aglio', component: AglioComponent },
   { path: 'redoc', component: ReDocComponent },
   { path: 'httpsnippet', component: HttpsnippetComponent },
+  { path: 'rapidoc', component: RapiDocComponent }
 ];
 
 @NgModule({
@@ -21,7 +23,8 @@ const routes: Routes = [
     ApiDocumentationsComponent,
     ReDocComponent,
     AglioComponent,
-    HttpsnippetComponent
+    HttpsnippetComponent,
+    RapiDocComponent
     // ReDocComponent // Add ReDocComponent to declarations
   ],
   imports: [
@@ -30,6 +33,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes)
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+
 })
 export class AppModule { }
