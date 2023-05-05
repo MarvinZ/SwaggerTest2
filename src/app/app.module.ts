@@ -3,15 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ApiDocumentationsComponent } from './api-documentations/api-documentations.component';
-import { RedocModule } from './redoc/redoc.module'; // Import RedocModule
 import { ReDocComponent } from './redoc/redoc.component';
 import { AglioComponent } from './aglio/aglio.component';
+import { HttpsnippetComponent } from './httpsnippet/httpsnippet.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/swagger', pathMatch: 'full' },
   { path: 'swagger', component: ApiDocumentationsComponent },
   { path: 'aglio', component: AglioComponent },
   { path: 'redoc', component: ReDocComponent },
+  { path: 'httpsnippet', component: HttpsnippetComponent },
 ];
 
 @NgModule({
@@ -19,7 +20,8 @@ const routes: Routes = [
     AppComponent,
     ApiDocumentationsComponent,
     ReDocComponent,
-    AglioComponent
+    AglioComponent,
+    HttpsnippetComponent
     // ReDocComponent // Add ReDocComponent to declarations
   ],
   imports: [
