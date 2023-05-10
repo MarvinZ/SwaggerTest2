@@ -10,9 +10,10 @@ import { RapiDocComponent } from './rapi-doc/rapi-doc.component';
 import { SpectacleComponent } from './spectacle/spectacle.component';
 import { ApidocComponent } from './apidoc/apidoc.component';
 import { WiddershinsComponent } from './widdershins/widdershins.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: '/swagger', pathMatch: 'full' },
+   { path: 'home', component: HomeComponent},
   { path: 'swagger', component: ApiDocumentationsComponent },
   { path: 'aglio', component: AglioComponent },
   { path: 'redoc', component: ReDocComponent },
@@ -33,7 +34,8 @@ const routes: Routes = [
     RapiDocComponent,
     SpectacleComponent,
     ApidocComponent,
-    WiddershinsComponent
+    WiddershinsComponent,
+    HomeComponent
     // ReDocComponent // Add ReDocComponent to declarations
   ],
   imports: [
