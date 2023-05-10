@@ -9,6 +9,7 @@ import { HttpsnippetComponent } from './httpsnippet/httpsnippet.component';
 import { RapiDocComponent } from './rapi-doc/rapi-doc.component';
 import { SpectacleComponent } from './spectacle/spectacle.component';
 import { ApidocComponent } from './apidoc/apidoc.component';
+import { WiddershinsComponent } from './widdershins/widdershins.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/swagger', pathMatch: 'full' },
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'httpsnippet', component: HttpsnippetComponent },
   { path: 'spectacle', component: SpectacleComponent },
   { path: 'rapidoc', component: RapiDocComponent },
-  { path: 'apidoc', component: ApidocComponent }
+  { path: 'apidoc', component: ApidocComponent },
+  { path: 'widdershins', component: WiddershinsComponent }
 ];
 
 @NgModule({
@@ -30,7 +32,8 @@ const routes: Routes = [
     HttpsnippetComponent,
     RapiDocComponent,
     SpectacleComponent,
-    ApidocComponent
+    ApidocComponent,
+    WiddershinsComponent
     // ReDocComponent // Add ReDocComponent to declarations
   ],
   imports: [
