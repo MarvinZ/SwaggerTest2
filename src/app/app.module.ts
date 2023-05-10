@@ -8,6 +8,7 @@ import { AglioComponent } from './aglio/aglio.component';
 import { HttpsnippetComponent } from './httpsnippet/httpsnippet.component';
 import { RapiDocComponent } from './rapi-doc/rapi-doc.component';
 import { SpectacleComponent } from './spectacle/spectacle.component';
+import { ApidocComponent } from './apidoc/apidoc.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/swagger', pathMatch: 'full' },
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'redoc', component: ReDocComponent },
   { path: 'httpsnippet', component: HttpsnippetComponent },
   { path: 'spectacle', component: SpectacleComponent },
-  { path: 'rapidoc', component: RapiDocComponent }
+  { path: 'rapidoc', component: RapiDocComponent },
+  { path: 'apidoc', component: ApidocComponent }
 ];
 
 @NgModule({
@@ -27,7 +29,8 @@ const routes: Routes = [
     AglioComponent,
     HttpsnippetComponent,
     RapiDocComponent,
-    SpectacleComponent
+    SpectacleComponent,
+    ApidocComponent
     // ReDocComponent // Add ReDocComponent to declarations
   ],
   imports: [

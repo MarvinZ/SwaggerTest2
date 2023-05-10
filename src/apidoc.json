@@ -1,0 +1,24 @@
+{
+  "name": "Test API",
+  "version": "1.0.0",
+  "description": "Documentation for Test API",
+  "title": "Test API Documentation",
+  "url" : "https://api.example.com",
+  "sampleUrl": "https://api.example.com",
+  "header" : {
+    "title" : "Header",
+    "content" : "<h1>Test API Documentation</h1>"
+  },
+  "footer" : {
+    "title" : "Footer",
+    "content" : "<h1>Test API Documentation</h1>"
+  },
+  "template": {
+    "forceLanguage": "en",
+    "withCompare": true,
+    "withGenerator": true,
+    "aloneDisplay": true
+  },
+  "input": "/pet.json",
+  "output": "../dist/testApiDoc/"
+}

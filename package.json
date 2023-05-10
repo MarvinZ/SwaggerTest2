@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "apidoc": "apidoc -i apidoc -o assets/testApiDoc"
+
   },
   "private": true,
   "dependencies": {
