@@ -7,13 +7,15 @@ import { ReDocComponent } from './redoc/redoc.component';
 import { AglioComponent } from './aglio/aglio.component';
 import { HttpsnippetComponent } from './httpsnippet/httpsnippet.component';
 import { RapiDocComponent } from './rapi-doc/rapi-doc.component';
+import { SpectacleComponent } from './spectacle/spectacle.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/swagger', pathMatch: 'full' },
+  // { path: '', redirectTo: '/swagger', pathMatch: 'full' },
   { path: 'swagger', component: ApiDocumentationsComponent },
   { path: 'aglio', component: AglioComponent },
   { path: 'redoc', component: ReDocComponent },
   { path: 'httpsnippet', component: HttpsnippetComponent },
+  { path: 'spectacle', component: SpectacleComponent },
   { path: 'rapidoc', component: RapiDocComponent }
 ];
 
@@ -24,7 +26,8 @@ const routes: Routes = [
     ReDocComponent,
     AglioComponent,
     HttpsnippetComponent,
-    RapiDocComponent
+    RapiDocComponent,
+    SpectacleComponent
     // ReDocComponent // Add ReDocComponent to declarations
   ],
   imports: [
